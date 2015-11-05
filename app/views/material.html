@@ -1,0 +1,72 @@
+<p>
+  There are 3 lvels of overrides:
+  <ul>
+    <li>custom theme definition (see app.js file -> $mdThemingProvider)</li>
+    <li>sass variables overrides (see _material-variables-overrides.scss)</li>
+    <li>class overrides (see _material-classes-overrides.scss)</li>
+    <li></li>
+  </ul>
+</p>
+
+<h1>Buttons</h1>
+<md-content ng-controller="MainController as main">
+  <section layout="row" layout-sm="column" layout-align="center center" layout-wrap>
+    <md-button md-no-ink class="md-raised md-primary">Primary default no ink (ripple)</md-button>
+    <md-button md-no-ink class="md-raised md-primary wix-button">Primary Wix Override</md-button>
+    <md-button class="md-raised md-primary wix-button wix-button-small">wix button small</md-button>
+    <md-button class="md-raised md-primary">Primary default</md-button>
+    <md-button class="md-raised md-primary md-hue-1">Primary Hue 1</md-button>
+    <md-button class="md-raised md-primary md-hue-2">Primary Hue 2</md-button>
+    <md-button class="md-raised md-primary md-hue-3">Primary Hue 3</md-button>
+    
+  </section>
+  <section layout="row" layout-sm="column" layout-align="center center" layout-wrap>
+
+    <md-button class="md-raised md-accent">accent default</md-button>
+    <md-button class="md-raised md-accent md-hue-1">accent Hue 1</md-button>
+    <md-button class="md-raised md-accent md-hue-2">accent Hue 2</md-button>
+    <md-button class="md-raised md-accent md-hue-3">accent Hue 3</md-button>
+
+  </section>
+
+  <section layout="row" layout-sm="column" layout-align="center center" layout-wrap>
+
+    <md-button class="md-raised md-warn">warn default</md-button>
+    <md-button class="md-raised md-warn md-hue-1">warn Hue 1</md-button>
+    <md-button class="md-raised md-warn md-hue-2">warn Hue 2</md-button>
+    <md-button class="md-raised md-warn md-hue-3">warn Hue 3</md-button>
+
+  </section>
+
+  <h1>Notifications</h1>
+  <section layout="row" layout-sm="column" layout-align="center center" layout-wrap>
+    <md-button md-no-ink class="md-raised md-primary" ng-click="main.showSimpleToast()">show notification</md-button>
+  </section>
+
+<!-- 
+  <section layout="row" layout-sm="column" layout-align="center center" layout-wrap>
+    <md-button ng-disabled="true" class="md-raised md-primary">Disabled</md-button>
+    <md-button class="md-raised md-warn">Warn</md-button>
+  </section>
+  <section layout="row" layout-sm="column" layout-align="center center" layout-wrap>
+
+    <md-button>clean button</md-button>
+    <md-button md-no-ink class="md-primary">Primary (md-noink)</md-button>
+    <md-button ng-disabled="true" class="md-primary">Disabled</md-button>
+    <md-button class="md-warn">warn</md-button>
+    <div class="label">Flat</div>
+  </section>
+  <section layout="row" layout-sm="column" layout-align="center center" layout-wrap>
+      <md-button ng-href="{{googleUrl}}" target="_blank">Default Link</md-button>
+      <md-button class="md-primary" ng-href="{{googleUrl}}" target="_blank">Primary Link</md-button>
+      <md-button>Default Button</md-button>
+    <div class="label">Link vs. Button</div>
+  </section>
+  <section layout="row" layout-sm="column" layout-align="center center" layout-wrap>
+    <md-button class="md-primary md-hue-1">Primary Hue 1</md-button>
+    <md-button class="md-warn md-raised md-hue-2">Warn Hue 2</md-button>
+    <md-button class="md-accent">Accent</md-button>
+    <md-button class="md-accent md-raised md-hue-1">Accent Hue 1</md-button>
+    <div class="label">Themed</div>
+  </section> -->
+</md-content>

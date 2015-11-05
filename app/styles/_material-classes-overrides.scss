@@ -1,0 +1,23 @@
+/* use this */
+.md-button {
+  &.md-primary {
+    &.md-raised {
+      &.wix-button {
+        background-color: green;
+      }
+      &:not([disabled]):hover {
+        opacity: 0.9;
+      }
+
+      &.wix-button-small {
+        padding: 1px;
+      }
+    }
+  }
+}
+
+/* will not work */
+.wix-button {
+  background-color: red;
+}
+
